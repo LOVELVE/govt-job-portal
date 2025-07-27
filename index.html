@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Government Job Portal 2025 - सरकारी नौकरी पोर्टल</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header with Live Monitoring -->
+        <header class="header">
+            <div class="header-top">
+                <h1 class="header-title">Ultimate Government Job Portal 2025</h1>
+                <div class="header-controls">
+                    <div class="live-indicator">
+                        <span class="live-dot"></span>
+                        <span>LIVE</span>
+                    </div>
+                    <button id="theme-toggle" class="btn btn--secondary btn--sm">🌙</button>
+                    <button id="lang-toggle" class="btn btn--secondary btn--sm">English</button>
+                </div>
+            </div>
+            
+            <!-- Live Statistics Dashboard -->
+            <div class="header-stats">
+                <div class="stat-item">
+                    <span class="stat-value" id="total-vacancies">89,971+</span>
+                    <span class="stat-label">कुल सक्रिय रिक्तियां</span>
+                    <span class="stat-update">+2,847 आज</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="total-sources">1,000+</span>
+                    <span class="stat-label">मास्टर स्रोत</span>
+                    <span class="stat-update">987 सक्रिय</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="urgent-jobs">250+</span>
+                    <span class="stat-label">तत्काल नौकरियां</span>
+                    <span class="stat-update">3 दिन में समाप्त</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="link-status">98.7%</span>
+                    <span class="stat-label">लिंक वैधता</span>
+                    <span class="stat-update">अंतिम जांच: 2 मिनट पहले</span>
+                </div>
+            </div>
+
+            <!-- Auto-Scraping Status -->
+            <div class="scraping-status">
+                <div class="scraping-info">
+                    <span class="scraping-icon">🔄</span>
+                    <span>अगली स्कैन: <span id="next-scan">1:12</span> मिनट में | अंतिम स्कैन: 28 जुलाई 2025, 1:00 AM</span>
+                </div>
+                <div class="scraping-stats">
+                    <span class="success-count">✅ 987 सफल</span>
+                    <span class="error-count">❌ 13 त्रुटि</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Qualification Info Panel -->
+        <section class="qualification-info">
+            <h2>📚 योग्यता की पूरी जानकारी</h2>
+            <div class="qualification-grid">
+                <div class="qualification-card">
+                    <h3>BCA</h3>
+                    <p class="full-form">Bachelor of Computer Applications</p>
+                    <p class="description">3 साल का कंप्यूटर एप्लीकेशन स्नातक कोर्स</p>
+                    <span class="job-count">8,000+ नौकरियां उपलब्ध</span>
+                </div>
+                <div class="qualification-card">
+                    <h3>MCA</h3>
+                    <p class="full-form">Master of Computer Applications</p>
+                    <p class="description">2 साल का कंप्यूटर एप्लीकेशन स्नातकोत्तर कोर्स</p>
+                    <span class="job-count">5,500+ नौकरियां उपलब्ध</span>
+                </div>
+                <div class="qualification-card">
+                    <h3>B.Tech</h3>
+                    <p class="full-form">Bachelor of Technology</p>
+                    <p class="description">4 साल का इंजीनियरिंग स्नातक कोर्स</p>
+                    <span class="job-count">12,500+ नौकरियां उपलब्ध</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Bar with Advanced Options -->
+        <section class="search-section">
+            <div class="search-container">
+                <input type="text" id="search-input" class="search-input" placeholder="पद का नाम, संगठन या योग्यता द्वारा नौकरी खोजें...">
+                <button id="search-btn" class="btn btn--primary">खोजें</button>
+                <button id="refresh-btn" class="btn btn--outline">🔄 रिफ्रेश</button>
+                <button id="link-check-btn" class="btn btn--secondary">🔗 लिंक जांचें</button>
+            </div>
+        </section>
+
+        <!-- Navigation Tabs -->
+        <nav class="nav-tabs">
+            <button class="nav-tab active" data-tab="jobs">नौकरियां</button>
+            <button class="nav-tab" data-tab="sources">मास्टर स्रोत</button>
+            <button class="nav-tab" data-tab="monitoring">निगरानी डैशबोर्ड</button>
+            <button class="nav-tab" data-tab="alerts">अलर्ट</button>
+            <button class="nav-tab" data-tab="business">बिजनेस मॉडल</button>
+        </nav>
+
+        <!-- Jobs Tab -->
+        <section id="jobs-tab" class="tab-content active">
+            <!-- Advanced Filters -->
+            <div class="advanced-filters">
+                <div class="filter-row">
+                    <select id="state-filter" class="form-control">
+                        <option value="all">सभी राज्य</option>
+                        <option value="all-india">अखिल भारतीय</option>
+                        <option value="bihar">बिहार</option>
+                        <option value="up">उत्तर प्रदेश</option>
+                        <option value="mp">मध्य प्रदेश</option>
+                        <option value="rajasthan">राजस्थान</option>
+                        <option value="delhi">दिल्ली</option>
+                    </select>
+                    <select id="source-type-filter" class="form-control">
+                        <option value="all">सभी स्रोत प्रकार</option>
+                        <option value="central">केंद्र सरकार</option>
+                        <option value="state">राज्य सरकार</option>
+                        <option value="psu">PSU</option>
+                        <option value="defense">रक्षा</option>
+                        <option value="banking">बैंकिंग</option>
+                        <option value="railway">रेलवे</option>
+                        <option value="court">न्यायालय</option>
+                    </select>
+                    <select id="mode-filter" class="form-control">
+                        <option value="all">सभी मोड</option>
+                        <option value="online">ऑनलाइन</option>
+                        <option value="offline">ऑफलाइन</option>
+                        <option value="walkin">वॉक-इन</option>
+                    </select>
+                    <select id="link-status-filter" class="form-control">
+                        <option value="all">सभी लिंक स्थिति</option>
+                        <option value="verified">सत्यापित</option>
+                        <option value="pending">जांच में</option>
+                        <option value="broken">टूटा हुआ</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Results Summary with Link Status -->
+            <div class="results-summary">
+                <span id="results-count">कुल परिणाम: 0</span>
+                <div class="link-legend">
+                    <span class="legend-item">🟢 सत्यापित लिंक</span>
+                    <span class="legend-item">🟡 जांच में</span>
+                    <span class="legend-item">🔴 टूटा हुआ</span>
+                    <span class="legend-item">🚨 तत्काल (3 दिन में समाप्त)</span>
+                </div>
+            </div>
+
+            <!-- Enhanced Jobs Table -->
+            <div class="jobs-table-container">
+                <table class="jobs-table" id="jobs-table">
+                    <thead>
+                        <tr>
+                            <th>संगठन</th>
+                            <th>पद का नाम [राज्य]</th>
+                            <th>रिक्तियां</th>
+                            <th>योग्यता</th>
+                            <th>वेतन</th>
+                            <th>अंतिम तिथि</th>
+                            <th>स्रोत</th>
+                            <th>लिंक स्थिति</th>
+                            <th>कार्य</th>
+                        </tr>
+                    </thead>
+                    <tbody id="jobs-tbody">
+                        <!-- Jobs will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="no-jobs" class="no-results hidden">
+                <h3>कोई नौकरी नहीं मिली</h3>
+                <p>कृपया अपने फिल्टर या खोज शब्दों को समायोजित करें</p>
+            </div>
+        </section>
+
+        <!-- Master Sources Tab -->
+        <section id="sources-tab" class="tab-content">
+            <h2>मास्टर स्रोत निर्देशिका (1000+ स्रोत)</h2>
+            
+            <!-- RRB Technical (21 Zones) -->
+            <div class="sources-category">
+                <h3>🚂 RRB Technical Vacancies (सभी 21 zones)</h3>
+                <div class="sources-grid" id="rrb-technical-sources">
+                    <!-- RRB sources will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- PSU Websites -->
+            <div class="sources-category">
+                <h3>🏭 PSU Websites</h3>
+                <div class="sources-grid" id="psu-sources">
+                    <!-- PSU sources will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Defense Recruitment -->
+            <div class="sources-category">
+                <h3>🛡️ Defense Recruitment</h3>
+                <div class="sources-grid" id="defense-sources">
+                    <!-- Defense sources will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Bihar Specific Sources -->
+            <div class="sources-category">
+                <h3>🌾 Bihar Specific Sources</h3>
+                <div class="sources-grid" id="bihar-sources">
+                    <!-- Bihar sources will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Central Government Sources -->
+            <div class="sources-category">
+                <h3>🏛️ Central Government Sources</h3>
+                <div class="sources-grid" id="central-sources">
+                    <!-- Central sources will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Monitoring Dashboard Tab -->
+        <section id="monitoring-tab" class="tab-content">
+            <h2>🔍 स्क्रैपिंग और निगरानी डैशबोर्ड</h2>
+            
+            <div class="monitoring-stats">
+                <div class="monitor-card">
+                    <h3>कुल स्रोत</h3>
+                    <div class="monitor-value">1,000</div>
+                    <div class="monitor-detail">
+                        <span class="success">✅ 987 सक्रिय</span>
+                        <span class="error">❌ 13 त्रुटि</span>
+                    </div>
+                </div>
+                <div class="monitor-card">
+                    <h3>स्कैन आवृत्ति</h3>
+                    <div class="monitor-value">10-15 मिनट</div>
+                    <div class="monitor-detail">अगली स्कैन: 1:12 मिनट में</div>
+                </div>
+                <div class="monitor-card">
+                    <h3>आज की नई नौकरियां</h3>
+                    <div class="monitor-value">2,847</div>
+                    <div class="monitor-detail">कल से +15% वृद्धि</div>
+                </div>
+                <div class="monitor-card">
+                    <h3>लिंक वैधता दर</h3>
+                    <div class="monitor-value">98.7%</div>
+                    <div class="monitor-detail">अंतिम जांच: 2 मिनट पहले</div>
+                </div>
+            </div>
+
+            <!-- Error Alert System -->
+            <div class="alert-system">
+                <h3>🚨 Error Alert System</h3>
+                <div class="error-alerts">
+                    <div class="error-item">
+                        <span class="error-type">Link Broken (404)</span>
+                        <span class="error-source">rrbpatna.gov.in</span>
+                        <span class="error-time">5 मिनट पहले</span>
+                        <button class="btn btn--sm btn--outline">जांचें</button>
+                    </div>
+                    <div class="error-item">
+                        <span class="error-type">SSL Issues</span>
+                        <span class="error-source">bpsc.bih.nic.in</span>
+                        <span class="error-time">12 मिनट पहले</span>
+                        <button class="btn btn--sm btn--outline">जांचें</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Real-time Activity Log -->
+            <div class="activity-log">
+                <h3>📊 Real-time Activity Log</h3>
+                <div class="log-entries" id="activity-log">
+                    <!-- Activity entries will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Alerts Tab -->
+        <section id="alerts-tab" class="tab-content">
+            <h2>🔔 नौकरी अलर्ट और सूचना प्रणाली</h2>
+            
+            <div class="alert-section">
+                <h3>📧 Smart Email Notifications</h3>
+                <div class="alert-form">
+                    <input type="email" id="email-input" class="form-control" placeholder="अपना ईमेल पता दर्ज करें">
+                    <select id="qualification-select" class="form-control">
+                        <option value="all">सभी योग्यता</option>
+                        <option value="10th">10वीं पास</option>
+                        <option value="12th">12वीं पास</option>
+                        <option value="graduate">स्नातक</option>
+                        <option value="bca">BCA (Bachelor of Computer Applications)</option>
+                        <option value="mca">MCA (Master of Computer Applications)</option>
+                        <option value="btech">B.Tech (Bachelor of Technology)</option>
+                    </select>
+                    <select id="state-preference" class="form-control">
+                        <option value="all">सभी राज्य</option>
+                        <option value="bihar">केवल बिहार</option>
+                        <option value="all-india">केवल अखिल भारतीय</option>
+                    </select>
+                    <button id="subscribe-email" class="btn btn--primary">Smart Alert Subscribe करें</button>
+                </div>
+            </div>
+
+            <div class="alert-section">
+                <h3>📱 Instant Communication Channels</h3>
+                <div class="communication-channels">
+                    <a href="https://t.me/govtjobsportal" class="btn btn--secondary" target="_blank">📱 मुख्य टेलीग्राम चैनल</a>
+                    <a href="https://t.me/urgentgovtjobs" class="btn btn--secondary" target="_blank">🚨 तत्काल अलर्ट चैनल</a>
+                    <a href="https://t.me/bihargovtjobs" class="btn btn--secondary" target="_blank">🌾 बिहार नौकरी चैनल</a>
+                    <a href="https://chat.whatsapp.com/govtjobs" class="btn btn--secondary" target="_blank">💬 व्हाट्सऐप ग्रुप</a>
+                </div>
+            </div>
+
+            <div class="alert-section">
+                <h3>🎯 Custom Job Tracking</h3>
+                <div class="custom-alert-form">
+                    <input type="text" id="keywords-input" class="form-control" placeholder="कीवर्ड दर्ज करें (जैसे: शिक्षक, पुलिस, बैंक, BCA, MCA)">
+                    <select id="frequency-select" class="form-control">
+                        <option value="instant">तत्काल (Real-time)</option>
+                        <option value="hourly">प्रति घंटा</option>
+                        <option value="daily">दैनिक</option>
+                        <option value="weekly">साप्ताहिक</option>
+                    </select>
+                    <button id="setup-custom-alert" class="btn btn--primary">Custom Tracker Setup करें</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Model Tab -->
+        <section id="business-tab" class="tab-content">
+            <h2>💼 Business Model & Premium Features</h2>
+
+            <div class="business-plans">
+                <div class="plan-card free-plan">
+                    <h3>🆓 Free Plan</h3>
+                    <div class="plan-price">₹0/महीना</div>
+                    <ul class="plan-features">
+                        <li>✅ Basic job listings देखें</li>
+                        <li>✅ Simple search करें</li>
+                        <li>✅ Apply links access करें</li>
+                        <li>✅ Daily email updates</li>
+                    </ul>
+                    <button class="btn btn--outline btn--full-width">Current Plan</button>
+                </div>
+
+                <div class="plan-card premium-plan">
+                    <h3>⭐ Premium Plan</h3>
+                    <div class="plan-price">₹99/महीना</div>
+                    <ul class="plan-features">
+                        <li>✅ Advanced filters</li>
+                        <li>✅ Real-time SMS/Email alerts</li>
+                        <li>✅ Link validation status</li>
+                        <li>✅ Source reliability tracking</li>
+                        <li>✅ Export to CSV/PDF</li>
+                        <li>✅ Priority customer support</li>
+                    </ul>
+                    <button class="btn btn--primary btn--full-width">Upgrade Now</button>
+                </div>
+
+                <div class="plan-card enterprise-plan">
+                    <h3>🏢 Enterprise API</h3>
+                    <div class="plan-price">₹999/महीना</div>
+                    <ul class="plan-features">
+                        <li>✅ Full API access</li>
+                        <li>✅ Custom integrations</li>
+                        <li>✅ Analytics dashboard</li>
+                        <li>✅ Bulk data export</li>
+                        <li>✅ White-label solutions</li>
+                        <li>✅ Dedicated account manager</li>
+                    </ul>
+                    <button class="btn btn--primary btn--full-width">Contact Sales</button>
+                </div>
+            </div>
+
+            <!-- API Documentation -->
+            <div class="api-section">
+                <h3>🔧 Developer API Access</h3>
+                <div class="api-demo">
+                    <h4>Sample API Endpoint:</h4>
+                    <pre><code>GET https://api.govtjobsportal.com/v1/jobs?qualification=BCA&state=bihar</code></pre>
+                    <p>Access structured job data for your applications and websites.</p>
+                    <button class="btn btn--secondary">View API Documentation</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>🔗 सभी लिंक काम कर रहे हैं</h4>
+                    <p>हमारी automated link validation system हर 10 मिनट में सभी links को check करती है।</p>
+                </div>
+                <div class="footer-section">
+                    <h4>📊 Data Reliability: 98.7%</h4>
+                    <p>Master source tracking से 1000+ government websites से real-time data।</p>
+                </div>
+                <div class="footer-section">
+                    <h4>⚡ Last Updated</h4>
+                    <p>28 जुलाई 2025, 1:00 AM | Next Update: <span id="next-update-time">1:12</span> minutes</p>
+                </div>
+            </div>
+            <div class="footer-disclaimer">
+                <p>सभी जानकारी आधिकारिक वेबसाइटों से ली गई है। पूर्ण विवरण के लिए आधिकारिक वेबसाइट देखें।</p>
+                <div class="footer-links">
+                    <a href="#" target="_blank">गोपनीयता नीति</a>
+                    <a href="#" target="_blank">सेवा की शर्तें</a>
+                    <a href="#" target="_blank">हमसे संपर्क करें</a>
+                    <a href="#" target="_blank">API Documentation</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

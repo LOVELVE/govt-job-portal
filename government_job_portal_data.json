@@ -1,0 +1,742 @@
+{
+  "central_government": {
+    "recruitment_boards": [
+      {
+        "name": "UPSC",
+        "website": "upsc.gov.in",
+        "type": "Central",
+        "posts": "IAS, IPS, IFS, IRS"
+      },
+      {
+        "name": "SSC",
+        "website": "ssc.nic.in",
+        "type": "Central",
+        "posts": "CGL, CHSL, MTS, JE"
+      },
+      {
+        "name": "IBPS",
+        "website": "ibps.in",
+        "type": "Banking",
+        "posts": "PO, Clerk, SO, RRB"
+      },
+      {
+        "name": "SBI",
+        "website": "sbi.co.in/careers",
+        "type": "Banking",
+        "posts": "PO, Clerk, SO"
+      },
+      {
+        "name": "RBI",
+        "website": "rbi.org.in",
+        "type": "Banking",
+        "posts": "Grade B, Assistant"
+      },
+      {
+        "name": "NCS",
+        "website": "ncs.gov.in",
+        "type": "Portal",
+        "posts": "All Govt Jobs"
+      },
+      {
+        "name": "Employment News",
+        "website": "employmentnews.gov.in",
+        "type": "Weekly",
+        "posts": "All Notifications"
+      }
+    ],
+    "ministries": [
+      {
+        "name": "Ministry of Home Affairs",
+        "website": "mha.gov.in",
+        "vacancies": "IB, CAPF, Police"
+      },
+      {
+        "name": "Ministry of Defence",
+        "website": "mod.gov.in",
+        "vacancies": "Army, Navy, Air Force"
+      },
+      {
+        "name": "Ministry of Railways",
+        "website": "indianrailways.gov.in",
+        "vacancies": "RRB, RRFC"
+      },
+      {
+        "name": "Ministry of Finance",
+        "website": "finmin.gov.in",
+        "vacancies": "Income Tax, Customs"
+      },
+      {
+        "name": "Ministry of Health",
+        "website": "mohfw.gov.in",
+        "vacancies": "AIIMS, CGHS"
+      }
+    ]
+  },
+  "rrb_zones": [
+    {
+      "zone": "RRB Ahmedabad",
+      "website": "rrbahmedabad.gov.in",
+      "coverage": "Gujarat, Rajasthan"
+    },
+    {
+      "zone": "RRB Ajmer",
+      "website": "rrbajmer.gov.in",
+      "coverage": "Rajasthan"
+    },
+    {
+      "zone": "RRB Allahabad",
+      "website": "rrbald.gov.in",
+      "coverage": "UP, MP"
+    },
+    {
+      "zone": "RRB Bangalore",
+      "website": "rrbbnc.gov.in",
+      "coverage": "Karnataka"
+    },
+    {
+      "zone": "RRB Bhopal",
+      "website": "rrbbhopal.gov.in",
+      "coverage": "MP"
+    },
+    {
+      "zone": "RRB Bhubaneswar",
+      "website": "rrbbbs.gov.in",
+      "coverage": "Odisha"
+    },
+    {
+      "zone": "RRB Bilaspur",
+      "website": "rrbbilaspur.gov.in",
+      "coverage": "Chhattisgarh"
+    },
+    {
+      "zone": "RRB Chandigarh",
+      "website": "rrbcdg.gov.in",
+      "coverage": "Punjab, Haryana"
+    },
+    {
+      "zone": "RRB Chennai",
+      "website": "rrbchennai.gov.in",
+      "coverage": "Tamil Nadu"
+    },
+    {
+      "zone": "RRB Gorakhpur",
+      "website": "rrbgkp.gov.in",
+      "coverage": "UP"
+    },
+    {
+      "zone": "RRB Guwahati",
+      "website": "rrbguwahati.gov.in",
+      "coverage": "Northeast"
+    },
+    {
+      "zone": "RRB Jammu",
+      "website": "rrbjammu.nic.in",
+      "coverage": "J&K"
+    },
+    {
+      "zone": "RRB Kolkata",
+      "website": "rrbkolkata.gov.in",
+      "coverage": "West Bengal"
+    },
+    {
+      "zone": "RRB Malda",
+      "website": "rrbmalda.gov.in",
+      "coverage": "West Bengal"
+    },
+    {
+      "zone": "RRB Mumbai",
+      "website": "rrbmumbai.gov.in",
+      "coverage": "Maharashtra"
+    },
+    {
+      "zone": "RRB Muzaffarpur",
+      "website": "rrbmuzaffarpur.gov.in",
+      "coverage": "North Bihar"
+    },
+    {
+      "zone": "RRB Patna",
+      "website": "rrbpatna.gov.in",
+      "coverage": "Bihar, UP"
+    },
+    {
+      "zone": "RRB Ranchi",
+      "website": "rrbranchi.gov.in",
+      "coverage": "Jharkhand"
+    },
+    {
+      "zone": "RRB Secunderabad",
+      "website": "rrbsecunderabad.nic.in",
+      "coverage": "Telangana, AP"
+    },
+    {
+      "zone": "RRB Siliguri",
+      "website": "rrbsiliguri.gov.in",
+      "coverage": "North Bengal"
+    },
+    {
+      "zone": "RRB Thiruvananthapuram",
+      "website": "rrbthiruvananthapuram.gov.in",
+      "coverage": "Kerala"
+    }
+  ],
+  "state_pscs": [
+    {
+      "state": "Andhra Pradesh",
+      "psc": "APPSC",
+      "website": "appsc.ap.nic.in",
+      "headquarters": "Vijayawada"
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "psc": "APPSC",
+      "website": "appsc.gov.in",
+      "headquarters": "Itanagar"
+    },
+    {
+      "state": "Assam",
+      "psc": "APSC",
+      "website": "apsc.nic.in",
+      "headquarters": "Guwahati"
+    },
+    {
+      "state": "Bihar",
+      "psc": "BPSC",
+      "website": "bpsc.bih.nic.in",
+      "headquarters": "Patna"
+    },
+    {
+      "state": "Chhattisgarh",
+      "psc": "CGPSC",
+      "website": "cgpsc.in",
+      "headquarters": "Raipur"
+    },
+    {
+      "state": "Goa",
+      "psc": "GPSC",
+      "website": "gpsc.goa.gov.in",
+      "headquarters": "Panaji"
+    },
+    {
+      "state": "Gujarat",
+      "psc": "GPSC",
+      "website": "gpsc.gujarat.gov.in",
+      "headquarters": "Gandhinagar"
+    },
+    {
+      "state": "Haryana",
+      "psc": "HPSC",
+      "website": "hpsc.gov.in",
+      "headquarters": "Panchkula"
+    },
+    {
+      "state": "Himachal Pradesh",
+      "psc": "HPPSC",
+      "website": "hp.gov.in/hppsc",
+      "headquarters": "Shimla"
+    },
+    {
+      "state": "Jammu & Kashmir",
+      "psc": "JKPSC",
+      "website": "jkpsc.gov.in",
+      "headquarters": "Srinagar"
+    },
+    {
+      "state": "Jharkhand",
+      "psc": "JPSC",
+      "website": "jharkhandpsc.org",
+      "headquarters": "Ranchi"
+    },
+    {
+      "state": "Karnataka",
+      "psc": "KPSC",
+      "website": "kpsc.kar.nic.in",
+      "headquarters": "Bangalore"
+    },
+    {
+      "state": "Kerala",
+      "psc": "KPSC",
+      "website": "keralapsc.org",
+      "headquarters": "Thiruvananthapuram"
+    },
+    {
+      "state": "Madhya Pradesh",
+      "psc": "MPPSC",
+      "website": "mppsc.com",
+      "headquarters": "Indore"
+    },
+    {
+      "state": "Maharashtra",
+      "psc": "MPSC",
+      "website": "mpsc.gov.in",
+      "headquarters": "Mumbai"
+    },
+    {
+      "state": "Manipur",
+      "psc": "MPSC",
+      "website": "mpscmanipur.gov.in",
+      "headquarters": "Imphal"
+    },
+    {
+      "state": "Meghalaya",
+      "psc": "MPSC",
+      "website": "mpsc.nic.in",
+      "headquarters": "Shillong"
+    },
+    {
+      "state": "Mizoram",
+      "psc": "MPSC",
+      "website": "mpsc.mizoram.gov.in",
+      "headquarters": "Aizawl"
+    },
+    {
+      "state": "Nagaland",
+      "psc": "NPSC",
+      "website": "npsc.co.in",
+      "headquarters": "Kohima"
+    },
+    {
+      "state": "Odisha",
+      "psc": "OPSC",
+      "website": "opsc.nic.in",
+      "headquarters": "Cuttack"
+    },
+    {
+      "state": "Punjab",
+      "psc": "PPSC",
+      "website": "ppsc.gov.in",
+      "headquarters": "Patiala"
+    },
+    {
+      "state": "Rajasthan",
+      "psc": "RPSC",
+      "website": "rpsc.gov.in",
+      "headquarters": "Ajmer"
+    },
+    {
+      "state": "Sikkim",
+      "psc": "SPSC",
+      "website": "spscskm.gov.in",
+      "headquarters": "Gangtok"
+    },
+    {
+      "state": "Tamil Nadu",
+      "psc": "TNPSC",
+      "website": "tnpsc.gov.in",
+      "headquarters": "Chennai"
+    },
+    {
+      "state": "Telangana",
+      "psc": "TSPSC",
+      "website": "tspsc.gov.in",
+      "headquarters": "Hyderabad"
+    },
+    {
+      "state": "Tripura",
+      "psc": "TPSC",
+      "website": "tripura.nic.in/tpsc",
+      "headquarters": "Agartala"
+    },
+    {
+      "state": "Uttar Pradesh",
+      "psc": "UPPSC",
+      "website": "uppsc.org.in",
+      "headquarters": "Allahabad"
+    },
+    {
+      "state": "Uttarakhand",
+      "psc": "UKPSC",
+      "website": "gov.ua.nic.in/ukpsc",
+      "headquarters": "Haridwar"
+    },
+    {
+      "state": "West Bengal",
+      "psc": "WBPSC",
+      "website": "pscwb.org.in",
+      "headquarters": "Kolkata"
+    }
+  ],
+  "bihar_specific": {
+    "recruitment_boards": [
+      {
+        "name": "BPSC",
+        "website": "bpsc.bih.nic.in",
+        "type": "State PSC",
+        "posts": "AE, BDO, DSP"
+      },
+      {
+        "name": "BSSC",
+        "website": "bssc.bihar.gov.in",
+        "type": "Staff Selection",
+        "posts": "Inter, Graduate Level"
+      },
+      {
+        "name": "BTSC",
+        "website": "btsc.bihar.gov.in",
+        "type": "Technical",
+        "posts": "Medical, Nursing"
+      },
+      {
+        "name": "BPSSC",
+        "website": "bpssc.bih.nic.in",
+        "type": "Police",
+        "posts": "Constable, SI"
+      },
+      {
+        "name": "CSBC",
+        "website": "csbc.bih.nic.in",
+        "type": "Police",
+        "posts": "Driver, Constable"
+      }
+    ],
+    "districts": [
+      {
+        "name": "Araria",
+        "website": "araria.nic.in",
+        "code": "AR"
+      },
+      {
+        "name": "Arwal",
+        "website": "arwal.nic.in",
+        "code": "AW"
+      },
+      {
+        "name": "Aurangabad",
+        "website": "aurangabad.bih.nic.in",
+        "code": "AU"
+      },
+      {
+        "name": "Banka",
+        "website": "banka.nic.in",
+        "code": "BA"
+      },
+      {
+        "name": "Begusarai",
+        "website": "begusarai.nic.in",
+        "code": "BE"
+      },
+      {
+        "name": "Bhagalpur",
+        "website": "bhagalpur.nic.in",
+        "code": "BG"
+      },
+      {
+        "name": "Bhojpur",
+        "website": "bhojpur.nic.in",
+        "code": "BJ"
+      },
+      {
+        "name": "Buxar",
+        "website": "buxar.nic.in",
+        "code": "BX"
+      },
+      {
+        "name": "Darbhanga",
+        "website": "darbhanga.nic.in",
+        "code": "DA"
+      },
+      {
+        "name": "East Champaran",
+        "website": "eastchamparan.nic.in",
+        "code": "EC"
+      },
+      {
+        "name": "Gaya",
+        "website": "gaya.nic.in",
+        "code": "GA"
+      },
+      {
+        "name": "Gopalganj",
+        "website": "gopalganj.nic.in",
+        "code": "GO"
+      },
+      {
+        "name": "Jamui",
+        "website": "jamui.nic.in",
+        "code": "JA"
+      },
+      {
+        "name": "Jehanabad",
+        "website": "jehanabad.nic.in",
+        "code": "JE"
+      },
+      {
+        "name": "Kaimur",
+        "website": "kaimur.nic.in",
+        "code": "KA"
+      },
+      {
+        "name": "Katihar",
+        "website": "katihar.nic.in",
+        "code": "KT"
+      },
+      {
+        "name": "Khagaria",
+        "website": "khagaria.nic.in",
+        "code": "KH"
+      },
+      {
+        "name": "Kishanganj",
+        "website": "kishanganj.nic.in",
+        "code": "KI"
+      },
+      {
+        "name": "Lakhisarai",
+        "website": "lakhisarai.nic.in",
+        "code": "LA"
+      },
+      {
+        "name": "Madhepura",
+        "website": "madhepura.nic.in",
+        "code": "MP"
+      },
+      {
+        "name": "Madhubani",
+        "website": "madhubani.nic.in",
+        "code": "MB"
+      },
+      {
+        "name": "Munger",
+        "website": "munger.nic.in",
+        "code": "MU"
+      },
+      {
+        "name": "Muzaffarpur",
+        "website": "muzaffarpur.nic.in",
+        "code": "MZ"
+      },
+      {
+        "name": "Nalanda",
+        "website": "nalanda.nic.in",
+        "code": "NA"
+      },
+      {
+        "name": "Nawada",
+        "website": "nawada.nic.in",
+        "code": "NW"
+      },
+      {
+        "name": "Patna",
+        "website": "patna.nic.in",
+        "code": "PA"
+      },
+      {
+        "name": "Purnea",
+        "website": "purnea.nic.in",
+        "code": "PU"
+      },
+      {
+        "name": "Rohtas",
+        "website": "rohtas.nic.in",
+        "code": "RO"
+      },
+      {
+        "name": "Saharsa",
+        "website": "saharsa.nic.in",
+        "code": "SA"
+      },
+      {
+        "name": "Samastipur",
+        "website": "samastipur.nic.in",
+        "code": "SM"
+      },
+      {
+        "name": "Saran",
+        "website": "saran.nic.in",
+        "code": "SR"
+      },
+      {
+        "name": "Sheikhpura",
+        "website": "sheikhpura.nic.in",
+        "code": "SH"
+      },
+      {
+        "name": "Sheohar",
+        "website": "sheohar.nic.in",
+        "code": "SO"
+      },
+      {
+        "name": "Sitamarhi",
+        "website": "sitamarhi.nic.in",
+        "code": "SI"
+      },
+      {
+        "name": "Siwan",
+        "website": "siwan.nic.in",
+        "code": "SW"
+      },
+      {
+        "name": "Supaul",
+        "website": "supaul.nic.in",
+        "code": "SU"
+      },
+      {
+        "name": "Vaishali",
+        "website": "vaishali.nic.in",
+        "code": "VA"
+      },
+      {
+        "name": "West Champaran",
+        "website": "westchamparan.nic.in",
+        "code": "WC"
+      }
+    ]
+  },
+  "banking_portals": [
+    {
+      "bank": "IBPS",
+      "website": "ibps.in",
+      "posts": "PO, Clerk, SO, RRB"
+    },
+    {
+      "bank": "SBI",
+      "website": "sbi.co.in/careers",
+      "posts": "PO, Clerk, SO"
+    },
+    {
+      "bank": "RBI",
+      "website": "rbi.org.in",
+      "posts": "Grade B, Assistant"
+    },
+    {
+      "bank": "NABARD",
+      "website": "nabard.org",
+      "posts": "Grade A, Grade B"
+    },
+    {
+      "bank": "SIDBI",
+      "website": "sidbi.in",
+      "posts": "Officer, Assistant Manager"
+    },
+    {
+      "bank": "Bank of Baroda",
+      "website": "bankofbaroda.in",
+      "posts": "PO, SO"
+    },
+    {
+      "bank": "Canara Bank",
+      "website": "canarabank.com",
+      "posts": "PO, Clerk"
+    },
+    {
+      "bank": "Punjab National Bank",
+      "website": "pnbindia.in",
+      "posts": "Officer, Clerk"
+    },
+    {
+      "bank": "Union Bank",
+      "website": "unionbankofindia.co.in",
+      "posts": "SO, Clerk"
+    },
+    {
+      "bank": "Indian Bank",
+      "website": "indianbank.in",
+      "posts": "PO, SO"
+    }
+  ],
+  "current_vacancies": [
+    {
+      "organization": "IB (Intelligence Bureau)",
+      "post": "ACIO Grade-II/Executive",
+      "vacancies": 3717,
+      "qualification": "Graduate",
+      "last_date": "10-08-2025",
+      "mode": "Online",
+      "salary": "₹44,900-1,42,400",
+      "website": "mha.gov.in"
+    },
+    {
+      "organization": "IBPS",
+      "post": "Probationary Officer",
+      "vacancies": 5208,
+      "qualification": "Graduate",
+      "last_date": "28-07-2025",
+      "mode": "Online",
+      "salary": "₹23,700-42,020",
+      "website": "ibps.in"
+    },
+    {
+      "organization": "BSF",
+      "post": "Constable Tradesman",
+      "vacancies": 3588,
+      "qualification": "10th + ITI",
+      "last_date": "24-08-2025",
+      "mode": "Online",
+      "salary": "₹21,700-69,100",
+      "website": "bsf.gov.in"
+    },
+    {
+      "organization": "AIIMS Patna",
+      "post": "Nursing Officer",
+      "vacancies": 3500,
+      "qualification": "B.Sc Nursing/GNM",
+      "last_date": "11-08-2025",
+      "mode": "Online",
+      "salary": "₹35,400-1,12,400",
+      "website": "aiimspatna.edu.in"
+    },
+    {
+      "organization": "BPSC",
+      "post": "Lower Division Clerk",
+      "vacancies": 26,
+      "qualification": "12th",
+      "last_date": "29-07-2025",
+      "mode": "Online",
+      "salary": "₹19,900-63,200",
+      "website": "bpsc.bih.nic.in"
+    }
+  ],
+  "eligibility_mapping": {
+    "10th_pass": [
+      "SSC MTS",
+      "RRB Group D",
+      "BSF Constable",
+      "CRPF Constable",
+      "Police Constable",
+      "Home Guard",
+      "Peon",
+      "Safaiwala"
+    ],
+    "12th_pass": [
+      "SSC CHSL",
+      "RRB NTPC",
+      "IBPS Clerk",
+      "SBI Clerk",
+      "Police SI",
+      "LDC",
+      "UDC",
+      "Stenographer"
+    ],
+    "graduate": [
+      "UPSC CSE",
+      "SSC CGL",
+      "IBPS PO",
+      "SBI PO",
+      "State PSC",
+      "Bank PO",
+      "IB ACIO",
+      "Assistant Manager"
+    ],
+    "btech_electrical": [
+      "BPSC AE Electrical",
+      "SSC JE",
+      "RRB JE",
+      "NTPC GET",
+      "BHEL Engineer",
+      "Power Grid Engineer"
+    ],
+    "bca": [
+      "IBPS IT Officer",
+      "SBI System Officer",
+      "NIC Scientist B",
+      "ISRO Computer Scientist",
+      "Bank Computer Officer"
+    ],
+    "mca": [
+      "IBPS IT Officer Scale-II",
+      "RBI IT Officer",
+      "UPSC Engineering Services",
+      "PSU IT Manager",
+      "Government Software Developer"
+    ]
+  }
+}
